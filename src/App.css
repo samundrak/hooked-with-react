@@ -30,3 +30,36 @@
     transform: rotate(360deg);
   }
 }
+
+.message {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+  padding: 10px;
+  width: 100vh;
+}
+ul {
+  padding: 0px;
+}
+ul li {
+  list-style-type: none;
+  background-color: yellowgreen;
+  text-align: left;
+  padding: 10px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+ul li:hover {
+  background-color: gray;
+}
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+ul li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.sidenav {
+  background: #856404;
+}
