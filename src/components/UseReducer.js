@@ -1,4 +1,5 @@
 import React, { useState, useReducer } from 'react';
+import Message from './Message';
 
 const initialState = {
   name: {
@@ -66,6 +67,13 @@ const UseReducer = () => {
   }
   return (
     <div>
+      <Message>
+        {`# useReducer 
+  - useReducer is an another hook provided by react 
+  - when we want to manage state in single object we can use it
+  - Inspired by redux, we may not need redux if our app is small and we need some state management
+  `}
+      </Message>
       <form name="form" onSubmit={handleSubmit}>
         <table>
           <tbody>

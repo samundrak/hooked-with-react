@@ -23,3 +23,9 @@
 - every time whenever a local state is changed this effect will run.
 - we can make our effect run depending on other state by passing it in second argument as array
 - We can make effect run only once by passing empty array in second argument
+
+## useReducer
+
+- useReducer is an another hook provided by react
+- when we want to manage state in single object we can use it
+- Inspired by redux, we may not need redux if our app is small and we need some state management
