@@ -6,6 +6,7 @@ import './App.css';
 import UseEffect from './components/UseEffect';
 import UseEffectCleanup from './components/UseEffectCleanup';
 import UseReducer from './components/UseReducer';
+import CustomHook from './components/CustomHook';
 
 class App extends Component {
   state = {
@@ -40,6 +41,9 @@ class App extends Component {
             <li>
               <Link to="/use-reducer">Use Reducer</Link>
             </li>
+            <li>
+              <Link to="/custom-hook">Custom Hook</Link>
+            </li>
           </ul>
         </div>
         <div style={{ width: 'auto', height: 'auto', float: 'left' }}>
@@ -49,6 +53,7 @@ class App extends Component {
             <Route path="/use-effect" component={UseEffect} />
             <Route path="/use-effect-cleanup" component={UseEffectCleanup} />
             <Route path="/use-reducer" component={UseReducer} />
+            <Route path="/custom-hook" component={CustomHook} />
           </Switch>
         </div>
       </div>
