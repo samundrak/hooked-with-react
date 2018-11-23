@@ -4,6 +4,8 @@ import SimpleReactHook from './components/SimpleReactHook';
 import Home from './components/Home';
 import './App.css';
 import UseEffect from './components/UseEffect';
+import UseEffectCleanup from './components/UseEffectCleanup';
+import UseReducer from './components/UseReducer';
 
 class App extends Component {
   state = {
@@ -32,6 +34,12 @@ class App extends Component {
             <li>
               <Link to="/use-effect">UseEffect</Link>
             </li>
+            <li>
+              <Link to="/use-effect-cleanup">UseEffectCleanup</Link>
+            </li>
+            <li>
+              <Link to="/use-reducer">Use Reducer</Link>
+            </li>
           </ul>
         </div>
         <div style={{ width: 'auto', height: 'auto', float: 'left' }}>
@@ -39,6 +47,8 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/simple" component={SimpleReactHook} />
             <Route path="/use-effect" component={UseEffect} />
+            <Route path="/use-effect-cleanup" component={UseEffectCleanup} />
+            <Route path="/use-reducer" component={UseReducer} />
           </Switch>
         </div>
       </div>
