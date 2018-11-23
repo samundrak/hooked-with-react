@@ -3,6 +3,7 @@
  */
 import React, { useState } from 'react';
 import Message from './Message';
+import GithubLink from './GithubLink';
 
 const SimpleReactHook = () => {
   const [count, updateCount] = useState(0);
@@ -33,6 +34,12 @@ const SimpleReactHook = () => {
       - Placement of useState matters
       `}
       </Message>
+      <GithubLink
+        file="src/components/SimpleReactHook.js"
+        label="Edit in github"
+        target="_blank"
+      />
+      <br />
       This is an simple React Hook example
       <br />
       It updates a number

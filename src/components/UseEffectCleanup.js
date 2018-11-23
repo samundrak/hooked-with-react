@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import GithubLink from './GithubLink';
 
 let cleanupCount = 0;
 const UseEffectCleanup = () => {
@@ -23,6 +24,7 @@ const UseEffectCleanup = () => {
   }
   return (
     <div>
+      <GithubLink file="src/components/UseEffectCleanup.js" target="_blank" />
       <button onClick={handleButton}>Please click me</button>
       Clicked me {count} times
     </div>

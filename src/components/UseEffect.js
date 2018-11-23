@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Message from './Message';
+import GithubLink from './GithubLink';
 
 const UseEffect = ({ watchMe }) => {
   const [age, setAge] = useState(0);
@@ -44,6 +45,7 @@ const useEffectWrapper = () => {
 
   return (
     <div>
+      <GithubLink file="src/components/UseEffect.js" target="_blank" />
       <button onClick={() => setWatchMe(Date.now())}>Update watch me!</button>
       <UseEffect watchMe={watchMe} />
     </div>

@@ -1,5 +1,6 @@
 import React, { useState, useReducer } from 'react';
 import Message from './Message';
+import GithubLink from './GithubLink';
 
 const initialState = {
   name: {
@@ -74,6 +75,8 @@ const UseReducer = () => {
   - Inspired by redux, we may not need redux if our app is small and we need some state management
   `}
       </Message>
+      <GithubLink file="src/components/UseReducer.js" target="_blank" />
+
       <form name="form" onSubmit={handleSubmit}>
         <table>
           <tbody>
