@@ -26,6 +26,11 @@ steps:
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     replaceExistingArchive: true
-- task: CmdLine@2
+- task: CopyFilesOverSSH@0
   inputs:
-    script: 'ls -a'
+    sshEndpoint: 'SAGEDEV'
+    sourceFolder: '$(Build.ArtifactStagingDirectory)'
+    contents: '$(Build.BuildId).zip'
+    targetFolder: '/home/sagedev'
+    readyTimeout: '20000''
+
